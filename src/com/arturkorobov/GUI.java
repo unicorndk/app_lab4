@@ -5,10 +5,10 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class GUI extends JFrame {
-    private JButton button = new JButton("Посчитать");
+    private JButton button = new JButton("Посчитать суммы чеков");
     private JTextField input1 = new JTextField("", 1);
     private JTextField input2 = new JTextField("", 1);
-    private JLabel label1 = new JLabel("Введите сумму счёта: ");
+    private JLabel label1 = new JLabel("Введите общую сумму счёта: ");
     private JLabel label2 = new JLabel("Введите количество гостей: ");
 
     public Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -16,7 +16,7 @@ public class GUI extends JFrame {
     public int screenHeight = screenSize.height;
 
     public GUI () {
-        super("Программа");
+        super("app_lab4");
         this.setBounds((screenWidth / 2) - 360/2, (screenHeight / 2) - 360/2, 360, 360);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
